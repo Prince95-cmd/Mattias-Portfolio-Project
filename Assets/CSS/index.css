@@ -60,7 +60,7 @@ body{
   background-image: url(../IMG/banner/banner-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -1200px -300px;
+  background-position: -350px 15px;
   background-attachment: fixed;
   height: 510px;
   
@@ -77,8 +77,8 @@ body{
   border-bottom: 1px var(--color4) solid; 
   position: static; 
   z-index: 6;
-  background-color: var(--bg-color2); 
-}
+  background-color: var(--bg-color2);
+} 
 
 .logo {
   width: 100px;
