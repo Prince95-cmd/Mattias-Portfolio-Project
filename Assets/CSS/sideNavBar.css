@@ -4,12 +4,12 @@
 /* Second side nav bar*/
 .sidebar2{
     color: var(--color);
-    height:700px ;
+    height:500px ;
     width: 0;
     position: fixed;
     z-index: 10;
     top: 0;
-    right: 1125px;
+    right: 0;
     background-color: var(--bg-color2);
     overflow-x: hidden;
     transition: 0.5s;
