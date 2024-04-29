@@ -1,0 +1,59 @@
+/* @keyframes slide-ads {
+    from{
+        margin-left: 100%;
+        width: 800%;
+    }
+
+    to {
+        margin-left: -50%;
+        width: 700%;
+    }
+} */
+
+/* Designer animation */
+@keyframes pulse-width {
+    50%{
+      width:100%;
+    }
+  }
+
+  /* First Bent arrow animation */
+  @keyframes shake{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(20deg);
+    }
+  }
+
+  /* Circular wave animation */
+  @keyframes scaleIn {
+    from {
+      transform: scale(.5, .5);
+      opacity: .5;
+    }
+    to {
+      transform: scale(1.0, 1.0);
+      opacity: 0;
+    }
+  }
+
+/* Slide animation */
+@keyframes slide-ads {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-150px * 8));
+  }
+}
+
+@keyframes slide-ads2 {
+  0% {
+    transform: translateX(calc(-150px * 8));
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

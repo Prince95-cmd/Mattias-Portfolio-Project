@@ -1,0 +1,254 @@
+/*Side bar container */
+
+
+/* Second side nav bar*/
+.sidebar2{
+    color: var(--color);
+    height:700px ;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 1125px;
+    background-color: var(--bg-color2);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10px;
+    /* display: none; */
+  }
+  
+  .sidebar2 *{
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .sidebar2 div:nth-of-type(2){
+    width: 200px;
+    height: 50px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  
+  .sidebar2 div:nth-of-type(2) img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sidebar2  #pff{
+    font-size: 15px;
+    color: var(--color2);
+    width: 85%;
+    margin-left: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .sidebar2 .info{
+    margin-left: 4px;
+  }
+  
+  .info h3{
+    margin-bottom: 5px;
+    color: var(--color2);
+  }
+  
+  .info p {
+    margin-bottom: 20px;
+  }
+  
+  .info:nth-of-type(3){
+    margin-bottom: 20px;
+  }
+  
+  .nav-socials{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    align-content: space-around;
+    margin-bottom:20px ;
+    margin-left: 8px;
+  }
+  
+  .nav-socials div{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 100%;
+  }
+  
+  .nav-socials a{
+    color: var(--bg-color2);
+    font-size: 20px;
+  }
+
+  .nav-socials .fa {
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  
+  .nav-socials #adjust{
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 5px;
+  }
+
+   #sideBtn {
+    width: 90%;
+    height: 60px;
+    margin: 5px 0 35px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: var(--color3);
+  }
+
+   
+  .sidebar2 #close{
+    position: absolute;
+    /* color: var(--bg-color2); */
+    top: 15px;
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    background-color: var(--color3);
+    border-radius: 5px;
+  }
+
+   #closebtn {
+    position: absolute;
+    top: -45px;
+    /* height: 100px; */
+    font-size: 80px;
+    margin-left: 5px;
+    color: var(--bg-color2);
+  }
+
+  @media screen and (min-width: 1024px){
+    /*Side bar container */
+
+
+/* Second side nav bar*/
+.sidebar2{
+  color: var(--color);
+  height:600px ;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-color2);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 10px;
+  /* display: none; */
+}
+
+.sidebar2 *{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.sidebar2 div:nth-of-type(2){
+  width: 200px;
+  height: 50px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.sidebar2 div:nth-of-type(2) img{
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar2  #pff{
+  font-size: 15px;
+  color: var(--color2);
+  width: 85%;
+  margin-left: 18px;
+  margin-bottom: 25px;
+}
+
+.sidebar2 .info{
+  margin-left: 4px;
+}
+
+.info h3{
+  margin-bottom: 5px;
+  color: var(--color2);
+}
+
+.info p {
+  margin-bottom: 20px;
+}
+
+.info:nth-of-type(3){
+  margin-bottom: 20px;
+}
+
+.nav-socials{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  align-content: space-around;
+  margin-bottom:20px ;
+  margin-left: 8px;
+}
+
+.nav-socials div{
+  width: 50px;
+  height: 50px;
+  background-color: var(--color3);
+  border: none;
+  border-radius: 100%;
+}
+
+.nav-socials a{
+  color: var(--bg-color2);
+  font-size: 20px;
+}
+
+.nav-socials .fa {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.nav-socials #adjust{
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+ #sideBtn {
+  width: 90%;
+  height: 60px;
+  margin: 5px 0 35px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: var(--color3);
+}
+
+ 
+.sidebar2 #close{
+  position: absolute;
+  /* color: var(--bg-color2); */
+  top: 15px;
+  width: 45px;
+  height: 45px;
+  right: 15px;
+  background-color: var(--color3);
+  border-radius: 5px;
+}
+
+ #closebtn {
+  position: absolute;
+  top: -45px;
+  /* height: 100px; */
+  font-size: 80px;
+  margin-left: 5px;
+  color: var(--bg-color2);
+}
+
+  }

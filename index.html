@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./Assets/CSS/index.css" />
+    <link rel="stylesheet" href="./Assets/CSS/animation.css" />
+    <link rel="stylesheet" href="./Assets/CSS/sideNavBar.css">
+    <script src="./Assets/JS/index.js" defer></script>
+    <title>Mattias Portfolio</title>
+  </head>
+  <body>
+
+    <!-- Main container -->
+    <main class="main-container">
+
+      <!-- Nav section -->
+      <nav class="nav-section">
+
+        <!-- Header -->
+        <header class="header">
+          <div class="logo" style="background-color: black">
+            <img src="./Assets/IMG/logo/logo.png" alt="logo _photo" />
+          </div>
+
+          <!-- Navigation -->
+          <div class="nav-hovers">
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">WORK</a></li>
+              <li>
+                <a href="">SERVICES</a>
+                <div class="dropdown-content">
+                    <a href="">Services</a>
+                    <a href="">Service Details</a>
+                </div>
+            </li>
+              <li><a href="">TESTIMONIAL</a></li>
+              <li>
+                <a href="">BLOG</a>
+                <div class="dropdown-content">
+                    <a href="">Blog</a>
+                    <a href="">Blog Details</a>
+                </div>
+            </li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+
+          <!-- Nav bars & button -->
+          <div class="nav-buttons">
+            <a id="barrow" href=""><button id="arrow-button">Let's Talk &RightArrow;</button></a>
+
+            <div class="bars">
+              <a href=""><i class="fa fa-bars"></i></a>
+            </div>
+
+            <!-- Side bar container -->
+          <aside id="firstSidebar" class="sidebar1">
+            <a href="javascript:void(0)" class="close-btn" onclick="openBars()">&times;</a>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">WORK</a></li>
+                <li>
+                  <a href="">SERVICE</a>
+                  <div class="dropdown-content">
+                      <a href="">Services</a>
+                      <a href="">Service Details</a>
+                  </div>
+              </li>
+                <li><a href="">TESTIMONIAL</a></li>
+                <li>
+                  <a href="">BLOG</a>
+                  <div>
+                      <a href="">Blog</a>
+                      <a href="">Blog Details</a>
+                  </div>
+              </li>
+                <li><a href="">CONTACT</a></li>
+              </ul>
+          </aside>
+          
+
+            <button class="reveal"  onclick="openNav()"><i class="fa fa-bars"  id="last-bars"></i></button>
+
+            <!-- Second side nav bar -->
+          <aside id="SecondSidebar" class="sidebar2">
+            <div id="close"><a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a></div>
+
+            <div><img style="background-color: black;" src="./Assets/IMG/logo/logo.png" alt="logo_photo"></div>
+
+            <p id="pff">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorum itaque. Quibusdam cumque amet porro hic repellat, magni ad, eos, voluptatem rerum omnis quod.</p>
+
+            <div class="info">
+            <h3>ADDRESS</h3>
+            <p>Victoria Street London</p>
+            </div>
+            <div  class="info">
+            <h3>EMAIL</h3>
+            <p>Mattias@gmail.com</p>
+            </div>
+            <div  class="info">
+            <h3>CALL NOW</h3>
+            <p>+98 4758 2154 021</p>
+            </div>
+            <div class="nav-socials">
+                <div ><a href="https://facebook.com"><i class="fa fa-facebook-f"></i></a></div>
+                <div id="adjust"><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></div>
+                <div><a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a></div>
+                <div><a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a></div>
+            </div>
+
+            <button  id="sideBtn">> Let's Talk</button>
+          </aside>
+          
+
+          
+        </header>
+
+        <!-- Nav Layout -->
+        <div class="overall-layout">
+
+            <!-- First cont -->
+          <div class="layout-div1">
+            <div>
+              <div>
+                <img
+                  src="./Assets/IMG/banner/dial__1_-removebg-preview.png"
+                  alt="photo_dial"
+                />
+              </div>
+              <p>(+02)-574-328-301</p>
+            </div>
+
+            <div class="div1-2">
+              <p>SCROLL DOWN</p>
+              <img
+                style="background-color: black"
+                src="./Assets/IMG/banner/scroll-down-removebg-preview.png"
+                alt="photo_scroll_down"
+              />
+            </div>
+          </div>
+
+          <!-- Second cont -->
+          <div class="layout-div2">
+            <div id="f-anchor"><a  href="">Currently Available For Freelance Worldwide <span id="anchor-span">&#8599</span> <hr></a></div>
+            
+            <div><h1>Creative Visual <h1 class="h1-span" >Designer</h1></h1></div>
+            <div>
+                <img src="./Assets/IMG/banner/bn-arrow (2).png" alt="bent_arrow_photo">
+                <div>
+                    <a href="https://www.youtube.com"><i class="fa fa-play"></i></a>
+                </div>
+                <p>Work Process</p>
+            </div>
+          </div>
+
+          <!-- Third cont -->
+          <div class="layout-div3"><img src="./Assets/IMG/banner/banner-man-removebg-preview.png" alt="bannaer_man_photo"></div>
+
+          <!-- Fourth cont -->
+          <div class="layout-div4">
+            <div>
+                <p>FOLLOWING</p>
+                <img src="./Assets/IMG/banner/scroll-down-removebg-preview.png" alt="photo_scroll_down">
+            </div>
+            <div>
+                <div class="linking"><a href="https://facebook.com"><i class="fa fa-facebook-f"></i></a></div>
+                <div><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></div>
+                <div><a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a></div>
+                <div><a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a></div>
+                <div><a href="https://instagram.com"><i class="fa fa-instagram"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </nav> 
+
+      <!-- scroll section -->
+      <section class="scroll-text">
+        <div><img src="./Assets/IMG/banner/ts1-removebg-preview.png" alt="banner-photo"></div>
+        <div><img src="./Assets/IMG/banner/ts2-removebg-preview.png" alt="banner-photo"></div>
+        <div><img src="./Assets/IMG/banner/ts3-removebg-preview.png" alt="banner-photo"></div>
+        <div><img src="./Assets/IMG/banner/ts4-removebg-preview.png" alt="banner-photo"></div>
+        <div><img src="./Assets/IMG/banner/ts1-removebg-preview.png" alt="banner-photo"></div>
+        <div><img src="./Assets/IMG/banner/ts2-removebg-preview.png" alt="banner-photo"></div>
+        <div><img src="./Assets/IMG/banner/ts3-removebg-preview.png" alt="banner-photo"></div>
+        <div><img src="./Assets/IMG/banner/ts4-removebg-preview.png" alt="banner-photo"></div>
+      </section>
+
+      <!-- Section one -->
+      <section class="section1" style="color: white;">
+
+        <!-- First container section one -->
+        <article>
+          <div class="starImage"><img src="./Assets/IMG/about/section-star-removebg-preview.png" alt="star_icon"></div>
+
+          <div class="starPara"><p>I'm David Matias, I'm a Brand & Webflow Designer, Currently residing in the lush Victoria Street London, Matias operates globally and is ready to take on any design challenge.</p></div>
+          <div class="starBtns">
+            <button >ABOUT</button>
+            <button >EXPERIENCE</button>
+            <button >EDUCATION</button>
+            <button >SKILLS</button>
+          </div>
+        </article> 
+
+        <!-- second container section one -->
+        <div class="mainPortfol">
+          <div class="manSeat"><img src="./Assets/IMG/about/personal-infothumb-removebg-preview.png" alt="info_photo"></div>
+
+          <!-- Aside subsection -->
+          <aside class="generalAside" >
+
+            <div class="personalInfo   portfol1">
+            <div>
+              <h1>Personal Info</h1>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+            </div>
+            <div  class="theWrap" >
+              <div class="bio">
+                <p id="firstP">Email</p>
+                <a href="">dev.mostafizar.com</a>
+              </div>
+              <div  class="bio">
+                <p>Phone</p>
+                <a href="">01575699193</a>
+              </div>
+              <div  class="bio">
+                <p>Address</p>
+                <a href="">Dahagram, Lalmonirhat</a>
+              </div>
+              <div  class="bio">
+                <p>Follow</p>
+                <div id="connect">
+                  <a href="https://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+                  <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                  <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                  <a href="https://youtube.com"><i class="fa fa-youtube-play"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- Experience -->
+            <div class="experience  portfol2">
+            <div>
+              <h1>Experience</h1>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+            </div>
+
+            <div  class="theJob">
+              <div class="containerWork">
+                <div><p>In 2011</p></div>
+                <div class="downing">
+                  <h3>Software Engineer</h3> 
+                  <p>UI Head & Manager</p>
+                </div>
+              </div>
+
+              <div class="containerWork">
+                <div><p>In 2016</p></div>
+                <div>
+                  <h3>Product Designer</h3> 
+                  <p>Head of Department</p>
+                </div>
+              </div>
+
+              <div class="containerWork number3">
+                <div><p>In 2023</p></div>
+                <div>
+                  <h3>Senior UI Designer</h3> 
+                  <p>Fiverr.com</p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- School -->
+            <div class="education  portfol3">
+            <div>
+              <h1>Education</h1>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+            </div>
+
+            <div class="theEdu ">
+              <div class="containerSchool">
+                <div><p>2011 - 2013</p></div>
+                <div class="moveDown">
+                  <h3>Programming Course</h3> 
+                  <p>New York University</p>
+                </div>
+              </div>
+
+              <div  class="containerSchool">
+                <div><p>2013 - 2016</p></div>
+                <div>
+                  <h3>University Of Design</h3> 
+                  <p>Kingston, United States</p>
+                </div>
+              </div>
+
+              <div  class="containerSchool number3">
+                <div><p>2016 - 2018</div>
+                <div>
+                  <h3>Web Design Course</h3> 
+                  <p>New York University</p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- Skills -->
+            <div class="skills  portfol4">
+            <div>
+              <h1>My Skills</h1>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+            </div>
+            <div class="skillful">
+              <div class="realSkill">
+                <div class="skillLogo"><img src="./Assets/IMG/about/html.png" alt="html_icon"></div>
+                <div>
+                  <p>HTML</p>
+                  <h3 id="eight5">85%</h3>
+                </div>
+              </div>
+
+              <div class="realSkill">
+                <div class="skillLogo"><img src="./Assets/IMG/about/figma.png" alt="html_icon"></div>
+                <div>
+                  <p>Figma</p>
+                  <h3>90%</h3>
+                </div>
+              </div>
+
+              <div class="realSkill">
+                <div class="skillLogo"><img src="./Assets/IMG/about/word.png" alt="html_icon"></div>
+                <div>
+                  <p>Wordpress</p>
+                  <h3>95%</h3>
+                </div>
+              </div>
+
+              <div class="realSkill">
+                <div class="skillLogo"><img src="./Assets/IMG/about/boot.png" alt="html_icon"></div>
+                <div>
+                  <p>Bootstrap</p>
+                  <h3>97%</h3>
+                </div>
+              </div>
+            </div>
+            </div>
+          </aside>
+        </div>
+
+      </section>
+
+      <!-- Scroll section -->
+      <section class="scroll2">
+        <div class="slide"><img src="./Assets/IMG/banner/ts5-removebg-preview.png" alt="banner-photo"></div>
+        <div class="slide"><img src="./Assets/IMG/banner/ts6-removebg-preview.png" alt="banner-photo"></div>
+        <div class="slide"><img src="./Assets/IMG/banner/ts7-removebg-preview.png" alt="banner-photo"></div>
+        <div class="slide"><img src="./Assets/IMG/banner/ts8-removebg-preview.png" alt="banner-photo"></div>
+        <div class="slide"><img src="./Assets/IMG/banner/ts5-removebg-preview.png" alt="banner-photo"></div>
+        <div class="slide"><img src="./Assets/IMG/banner/ts6-removebg-preview.png" alt="banner-photo"></div>
+        <div class="slide"><img src="./Assets/IMG/banner/ts7-removebg-preview.png" alt="banner-photo"></div>
+        <div class="slide"><img src="./Assets/IMG/banner/ts8-removebg-preview.png" alt="banner-photo"></div>
+      </section>
+
+      <!-- Section two -->
+      <section class="awards">
+        <div >
+          <h1>Our Awards</h1>
+          <a href="">View My Work &rightarrow;</a>
+        </div>
+        <div>
+          <p>Site Of The Day</p>
+          <p>Css & Animation</p>
+          <p>2018</p>
+        </div>
+        <div>
+          <p>Best Business Model</p>
+          <p>New Strategy</p>
+          <p>2019</p>
+        </div>
+        <div>
+          <p>Motion Graphic</p>
+          <p>3D & Visual Effect</p>
+          <p>2020</p>
+        </div>
+        <div>
+          <p>Video Design</p>
+          <p>Css & Animation</p>
+          <p>2022</p>
+        </div>
+      </section>
+
+       <!-- Section three -->
+      <section class="feedBack">
+        <div>
+          <h3>Complete Project</h3> 
+          <p>
+            Look At My Portfolio And Give Me Your Feedback
+          </p>
+        </div>
+        <div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section four -->
+      <section></section>
+
+      <!-- Section five -->
+      <section></section>
+
+       <!-- Section six -->
+      <section></section>
+
+      <!-- Section seven -->
+      <section></section>
+
+      <!-- Section eight -->
+      <section></section>
+
+      <!-- Section nine -->
+      <section></section>
+
+      <!-- Section ten -->
+      <section></section>
+
+      <!-- Footer -->
+      <footer></footer>
+    </main>
+  </body>
+</html>
