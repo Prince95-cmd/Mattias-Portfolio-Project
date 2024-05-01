@@ -4,7 +4,7 @@
 /* Second side nav bar*/
 .sidebar2{
     color: var(--color);
-    height:500px ;
+    height:650px ;
     width: 0;
     position: fixed;
     z-index: 10;
