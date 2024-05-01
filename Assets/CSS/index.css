@@ -106,11 +106,21 @@ body{
 .fa-bars {
   color: var(--color) ;
   font-size: 25px;
+  transition: opacity 0.3s ease;
+}
+
+.bars p{
+  color: var(--color) ;
+  font-size: 55px;
+  position: absolute;
+  top: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .bars{
   margin: 10px 10px 0 10px;
-  
+  /* position: relative; */
 }
 
 #last-bars{
@@ -134,10 +144,7 @@ body{
   font-size: 70px;
 }
 
-.sidebar1 {
-  color: var(--color);
-  display: none;
-}
+
 
 
 
