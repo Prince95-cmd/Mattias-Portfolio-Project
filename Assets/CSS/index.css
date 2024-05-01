@@ -50,7 +50,6 @@ body{
 .main-container {
   /* width: 100%; */
   margin: -10px auto;
-  border: 2px solid white ;
 }
 
 /* Nav section  */
@@ -1611,7 +1610,6 @@ body, html{
 .main-container {
   /* width: 100%; */
   margin: 0 auto;
-  border: 2px solid white ;
   overflow-x: hidden;
 }
 
