@@ -23,7 +23,7 @@
       <nav class="nav-section">
 
         <!-- Header -->
-        <header class="header">
+        <header class="header"  id="theHeader">
           <div class="logo" style="background-color: black">
             <img src="./Assets/IMG/logo/logo.png" alt="logo _photo" />
           </div>
@@ -34,21 +34,20 @@
               <li><a href="">HOME</a></li>
               <li><a href="">ABOUT</a></li>
               <li><a href="">WORK</a></li>
-              <li>
-                <a href="">SERVICES </a>
-                  <div class="dropdown-content">
+              <li><a href="">SERVICES </a>
+                <span class="tooltip-text">
                   <a href="">Services</a> <br>
                   <a href="">Service Details</a>
-                  </div>
-            </li>
+                </span>
+              </li>
               <li><a href="">TESTIMONIAL</a></li>
               <li>
                 <a href="">BLOG</a>
-                <div class="dropdown-content">
-                    <a href="">Blog</a>
-                    <a href="">Blog Details</a>
-                </div>
-            </li>
+                <span class="tooltip-link">
+                  <a href="">Blog</a><br>
+                  <a href="">Blog Details</a>
+                </span>
+              </li>
               <li><a href="">CONTACT</a></li>
             </ul>
           </div>
@@ -204,6 +203,7 @@
           <div class="starImage"><img src="./Assets/IMG/about/section-star-removebg-preview.png" alt="star_icon"></div>
 
           <div class="starPara"><p>I'm David Matias, I'm a Brand & Webflow Designer, Currently residing in the lush Victoria Street London, Matias operates globally and is ready to take on any design challenge.</p></div>
+
           <div class="starBtns">
             <button >ABOUT</button>
             <button >EXPERIENCE</button>
@@ -222,8 +222,10 @@
             <div class="personalInfo   portfol1">
             <div>
               <h1>Personal Info</h1>
-              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+              <p  id="moving-up" >Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
             </div>
+
+            
             <div  class="theWrap" >
               <div class="bio">
                 <p id="firstP">Email</p>
@@ -255,7 +257,8 @@
               <h1>Experience</h1>
               <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
             </div>
-
+           
+            
             <div  class="theJob">
               <div class="containerWork">
                 <div><p>In 2011</p></div>
@@ -264,6 +267,7 @@
                   <p>UI Head & Manager</p>
                 </div>
               </div>
+           
 
               <div class="containerWork">
                 <div><p>In 2016</p></div>
@@ -585,7 +589,7 @@
         <p id="firstDream">Your Dream Website In Just Few Steps</p>
 
         <div class="unorderedListing">
-          <div>
+          <div class="turnX">
             <h2>Concept</h2>
             <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
             <ul>
@@ -594,7 +598,7 @@
               <li>Developing a strategy</li>
             </ul>
           </div>
-          <div>
+          <div class="turnX">
             <h2>Design</h2>
             <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
             <ul>
@@ -603,7 +607,8 @@
               <li>Developing a strategy</li>
             </ul>
           </div>
-          <div><h2>Webflow</h2>
+          <div class="turnX">
+            <h2>Webflow</h2>
             <p>Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit</p>
             <ul>
               <li>Reviewing any existing branding</li>

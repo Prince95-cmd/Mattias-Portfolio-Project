@@ -35,6 +35,7 @@ body{
 .main-container {
   /* width: 100%; */
   margin: -10px auto;
+  padding: 0;
 }
 
 /* Nav section  */
@@ -47,32 +48,33 @@ body{
   background-position: -350px 15px;
   background-attachment: fixed;
   height: 510px;
-  
+  margin: 0;
 }
 
 /* Header */
 .header {
-  /* width: 100%; */
-  margin-top: -5px;
+  width: 100%;
+  /* margin-top: -5px; */
   padding: 5px;
   display: flex;
   height: 80px;
   align-items: center;
   border-bottom: 1px var(--color4) solid; 
-  position: static; 
-  z-index: 6;
+  position: fixed; 
+  z-index: 10;
   background-color: var(--bg-color2);
+  margin: 0;
 } 
 
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 
-.sticky + .overall-layout {
+/* .sticky + .overall-layout {
   padding-top: 150px;
-}
+} */
 
 
 .logo {
@@ -193,6 +195,7 @@ body{
 /* Nav layout */
 .overall-layout {
   display: block; 
+  padding-top: 90px;
 } 
 
 /* First cont */
@@ -325,6 +328,9 @@ hr {
   z-index: 1;
   float: right;
   margin-left: 250px;
+  animation-name: appear;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
 }
 
 .layout-div3 img {
@@ -351,6 +357,8 @@ hr {
   padding-top: 25px;
   padding-bottom: 25px;
   overflow-x: hidden;
+  z-index: 2;
+  position: relative;
 }   
 
  .scroll2{
@@ -378,6 +386,7 @@ hr {
 .starImage {
   width: 30px;
   margin: 70px auto 30px auto;
+  animation: show-star 3s ease ;
 }
 
 .starPara {
@@ -386,6 +395,7 @@ hr {
   text-align: center;
   font-size: 17px;
   font-weight: 300;
+  animation: move-up 1.5s ease-in-out;
 }
 
 .starBtns {
@@ -444,6 +454,7 @@ hr {
   width: 100%;
   height: 350px;
   margin-top: 30px;
+  animation: expand-in 0.5s linear;
 }
 
 .manSeat img{
@@ -457,12 +468,22 @@ hr {
   padding: 2px;
 }
 
+
+
 .portfol1 h1 {
   font-size: 50px;
   font-weight: 400;
   margin-top: 15px;
   margin-bottom: 10px;
+  animation: move-up 0.5s linear;
+}
 
+#moving-up {
+  animation: move-up 1.5s linear;
+}
+
+.theWrap{
+  animation: expand-in 0.7s linear;
 }
 
 .portfol1 div:nth-of-type(1) p{
@@ -532,7 +553,6 @@ hr {
   font-weight: 400;
   margin-top: 15px;
   margin-bottom: 10px;
-
 }
 
 .portfol2 div:nth-of-type(1) p{
@@ -599,7 +619,6 @@ hr {
   font-weight: 400;
   margin-top: 15px;
   margin-bottom: 10px;
-
 }
 
 .portfol3 div:nth-of-type(1) p{
@@ -746,6 +765,10 @@ hr {
   padding: 50px 10px 50px 10px;
 }
 
+.awards *{
+  animation: move-up 1.5s linear;
+}
+
 .awards div {
   display: flex;
   justify-content: space-between;
@@ -799,6 +822,7 @@ hr {
   max-width: 100%;
   margin: 50px auto;
   position: relative;
+  animation: move-down 1.5s linear;
 }
 
 .feedBack .completeProject h3:before {
@@ -827,6 +851,11 @@ hr {
   font-size: 30px;
   text-align: center;
   line-height: 35px;
+  animation: move-up 1.5s linear;
+}
+
+.activeProductDesign1, .activeProductDesign2, .activeProductDesign3, .activeProductDesign4, .activeProductDesign5, .activeProductDesign6{
+  animation: move-up 1.5s linear;
 }
 
 /* Product images */
@@ -881,6 +910,7 @@ hr {
   background: var(--color3);
   margin: 60px auto 60px auto;
   position: relative;
+  animation: move-down 1.5s linear;
 }
 
 .moreWork::before {
@@ -938,6 +968,7 @@ hr {
   position: relative;
   max-width: 100%;
   text-align: center;
+  animation: move-down 1s linear;
 }
 
 .together h3:before {
@@ -956,6 +987,7 @@ hr {
   /* text-align: center; */
   line-height: 35px;
   margin-bottom: 50px;
+  animation: move-down 1.5s linear;
 }
 
 .emailAndLocation {
@@ -972,6 +1004,7 @@ hr {
   gap: 20px;
   border-top: 1px solid var(--color4);
   border-bottom: 1px solid var(--color4);
+  animation: move-up 1.5s linear;
 }
 
 .reachOut p {
@@ -1021,6 +1054,7 @@ hr {
   width: 100%;
   height: 400px;
   margin-top: 90px;
+  animation: expand-in-slow 2.5s linear;
 }
 
 #setIt img{
@@ -1048,6 +1082,7 @@ hr {
   max-width: 70%;
   margin: 50px auto;
   position: relative;
+  animation: move-down 1.5s ease-out;
 }
 
 .ourService h3::before {
@@ -1077,6 +1112,7 @@ hr {
   text-align: center;
   line-height: 35px;
   margin-top: -15px;
+  animation: move-up 1.5s ease-out;
 }
 
 .listOfServices {
@@ -1089,6 +1125,10 @@ hr {
   flex-direction: column;
   border-bottom: 1px solid var(--color4);
   padding-bottom: 30px;
+}
+
+.listContainers {
+  animation: move-up 1.5s ease-out;
 }
 
 .listContainers:nth-of-type(1) {
@@ -1170,6 +1210,7 @@ hr {
   margin: 50px auto;
   position: relative;
   margin-top: 90px;
+  animation: move-down 1.5s ease-out;
 }
 
 .dreamWebsite h3::before {
@@ -1199,6 +1240,7 @@ hr {
   text-align: center;
   line-height: 35px;
   margin-top: -15px;
+  animation: move-up 1.5s ease-out;
 }
 
 .unorderedListing {
@@ -1251,6 +1293,10 @@ hr {
   margin-top: 5pz;
 }
 
+.turnX {
+  animation: turn-x 1s linear;
+}
+
 /* Section 7 */
 
 .testimonial {
@@ -1266,6 +1312,7 @@ hr {
   max-width: 70%;
   margin: 50px auto;
   position: relative;
+  animation: go-up 1.5s ease-out;
 }
 
 .testimonial h3::before{
@@ -1296,6 +1343,7 @@ hr {
   line-height: 35px;
   margin-top: -15px;
   width: 100%;
+  animation: move-down 1.5s ease-out;
 }
 
 .movingTest p:nth-of-type(1){
@@ -1317,6 +1365,11 @@ hr {
 .movingTest p:nth-of-type(3){
   color: var(--color2);
   font-size: 20px;
+}
+
+#twistArrow {
+  animation: shake-back 1s linear infinite alternate;
+  
 }
 
 /* Section 8 */
@@ -1343,7 +1396,7 @@ hr {
   margin: 50px 0 50px 75px;
   position: relative;
   max-width: 100%;
-
+  animation: move-down 1.5s ease-out;
 }
 
 .blogIntro h3::before{
@@ -1363,6 +1416,7 @@ hr {
   margin-top: -15px;
   width: 100%; 
   margin-left: 10px;
+  animation: move-down 1.2s ease-out
 }
 
 /* The circle */
@@ -1373,6 +1427,7 @@ hr {
   background: var(--color3);
   margin: 40px 0px 40px 15px;
   position: relative;
+  animation: move-down 1.7s ease-out
 }
 
 .blogIntro div::before{
@@ -1400,6 +1455,11 @@ hr {
   margin-left: 35px;
   font-size: 20px;
 }
+
+.blogShowcase{
+  animation: move-up 1.5s ease-out
+}
+
 
 .blogShowcase:nth-of-type(1) {
   display: flex;
@@ -1488,6 +1548,7 @@ hr {
   width: 100%;
   height: 60px;
   align-content: center;
+  animation: go-up 1.5s ease-out
 }
 
 #veryBigHeader h1{
@@ -1673,6 +1734,8 @@ body, html{
   height: 90px;
   align-items: center;
   border-bottom: 1px var(--color4) solid; 
+  position: fixed;
+  z-index: 10;
 }
 
 .logo {
@@ -1688,8 +1751,41 @@ body, html{
 
 /* Navigation */
 .nav-hovers {
-  display: block;
+  display: inline-block;
   margin-left: 100px;
+  position: relative;
+}
+
+.nav-hovers li .tooltip-text{
+  visibility: hidden;
+  width: 200px;
+  height: 70px;
+  background-color: var(--color3);
+  color: red;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 5;
+  bottom: -70%;
+  left: 49%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-hovers li .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.nav-hovers li:hover .tooltip-text{
+  visibility: visible;
+  opacity: 1;
 }
 
 .nav-hovers ul {
@@ -1817,6 +1913,7 @@ body, html{
 .overall-layout {
   display: flex; 
   height: 800px;
+  padding-top: 110px;
 } 
 
 
@@ -2055,6 +2152,7 @@ hr {
   background-color: var(--color3);
   padding-top: 25px;
   padding-bottom: 25px;
+  border: none;
 }   
 
 .scroll2{
