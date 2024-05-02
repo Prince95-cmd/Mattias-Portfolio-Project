@@ -92,6 +92,7 @@ body{
 #barrow{
   width: 50%;
   margin-left: 10%;
+  
 }
 
 #arrow-button {
@@ -100,6 +101,28 @@ body{
   background-color: var(--color3);
   border: none;
   border-radius: 5px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#arrow-button:hover {
+  opacity: 0.8;
+}
+
+#arrow-button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #b0da0a;
+  z-index: -1;
+  transition: 1s;
+}
+#arrow-button:hover::before{
+  height: 180%;
 }
 
 
@@ -858,9 +881,12 @@ hr {
   position: absolute;
   top: 8px;
   left: -8px;
+  transition: top 0.3s ease-out;
 }
 
-
+.moreWork::before:hover{
+  top: -20px;
+}
 
 .moreWork #moreLink{
   color: var(--bg-color2);
@@ -1703,6 +1729,28 @@ body, html{
   border-radius: 5px;
   margin-left: 20px;
   font-size: 18px;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#arrow-button:hover {
+  opacity: 0.8;
+}
+
+#arrow-button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #b0da0a;
+  z-index: -1;
+  transition: 1s;
+}
+#arrow-button:hover::before{
+  height: 180%;
 }
 
 
