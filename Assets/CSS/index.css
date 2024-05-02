@@ -28,6 +28,7 @@ body{
     background-color: var(--bg-color1);
     /* width: 100%; */
     overflow-x: hidden !important;
+    margin: 0;
 }
 
 /* Main container */
@@ -62,6 +63,17 @@ body{
   z-index: 6;
   background-color: var(--bg-color2);
 } 
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .overall-layout {
+  padding-top: 150px;
+}
+
 
 .logo {
   width: 100px;
