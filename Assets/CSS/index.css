@@ -1756,36 +1756,110 @@ body, html{
   position: relative;
 }
 
+/* Hover drop down nav */
 .nav-hovers li .tooltip-text{
   visibility: hidden;
-  width: 200px;
-  height: 70px;
-  background-color: var(--color3);
-  color: red;
-  padding: 5px 0;
+  width: 230px;
+  height: 80px;
+  background-color: var(--color);
+  padding: 5px;
   position: absolute;
   z-index: 5;
-  bottom: -70%;
+  bottom: -160%;
   left: 49%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
+  border: none;
+  align-content: center;
+  animation: move-up 0.5s ease-out;
+}
+
+.nav-hovers li .tooltip-text a{
+  color: var(--bg-color2);
+}
+
+.nav-hovers li .tooltip-text a:hover{
+  margin-left: 30px;
+  transition: 1s;
+}
+
+
+.nav-hovers li .tooltip-text *{
+  margin-left: 20px;
+  font-size: 20px;
 }
 
 .nav-hovers li .tooltip-text::after {
   content: "";
   position: absolute;
-  top: 100%;
-  left: 50%;
+  top: -80%;
+  left: 10%;
   margin-left: -5px;
-  border-width: 5px;
+  border-width: 18px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: transparent transparent var(--color) transparent;
+  width: 0;
+  height: 40px;
 }
 
 .nav-hovers li:hover .tooltip-text{
   visibility: visible;
   opacity: 1;
+  animation: go-up 0.5s ease-out;
+}
+
+/* Second tooltip */
+.nav-hovers li .tooltip-link{
+  visibility: hidden;
+  width: 230px;
+  height: 80px;
+  background-color: var(--color);
+  padding: 5px;
+  position: absolute;
+  z-index: 5;
+  bottom: -160%;
+  left: 83%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border: none;
+  align-content: center;
+  
+}
+
+.nav-hovers li .tooltip-link a{
+  color: var(--bg-color2);
+}
+
+.nav-hovers li .tooltip-link a:hover{
+  margin-left: 30px;
+  transition: 1s;
+}
+
+
+.nav-hovers li .tooltip-link *{
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.nav-hovers li .tooltip-link::after {
+  content: "";
+  position: absolute;
+  top: -80%;
+  left: 10%;
+  margin-left: -5px;
+  border-width: 18px;
+  border-style: solid;
+  border-color: transparent transparent var(--color) transparent;
+  width: 0;
+  height: 40px;
+}
+
+.nav-hovers li:hover .tooltip-link{
+  visibility: visible;
+  opacity: 1;
+  animation: move-up 0.5s ease-out;
 }
 
 .nav-hovers ul {
@@ -2178,6 +2252,7 @@ hr {
 .starImage {
   width: 30px;
   margin: 90px auto 30px auto;
+  animation: show-star 3s ease ;
 }
 
 .starPara {
@@ -2186,6 +2261,7 @@ hr {
   text-align: center;
   font-size: 43px;
   font-weight: 300;
+  animation: move-up 1.5s ease-in-out;
 }
 
 .starBtns {
@@ -2268,7 +2344,15 @@ hr {
   font-weight: 400;
   margin-top: 15px;
   margin-bottom: 10px;
+  animation: move-up 0.5s linear;
+}
 
+#moving-up {
+  animation: move-up 1.5s linear;
+}
+
+.theWrap{
+  animation: expand-in 0.7s linear;
 }
 
 .portfol1 div:nth-of-type(1) p{
