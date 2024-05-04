@@ -108,7 +108,7 @@
 
 @keyframes turn-x{
   0%{
-    transform: rotateX(-60deg);
+    transform: rotateX(-90deg);
   }
 
   100%{
@@ -134,3 +134,15 @@
   0%{opacity: 0;}
   100%{opacity: 1;}
 }
+
+
+/* .revealElement{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.revealElement.active{
+  transform: translateY(0);
+  opacity: 1;
+} */

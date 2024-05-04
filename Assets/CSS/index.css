@@ -36,6 +36,7 @@ body{
   /* width: 100%; */
   margin: -10px auto;
   padding: 0;
+  overflow-x: hidden;
 }
 
 /* Nav section  */
@@ -49,6 +50,7 @@ body{
   background-attachment: fixed;
   height: 510px;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* Header */
@@ -64,6 +66,7 @@ body{
   z-index: 10;
   background-color: var(--bg-color2);
   margin: 0;
+  box-sizing: border-box;
 } 
 
 /* .sticky {
@@ -266,6 +269,7 @@ hr {
 
 
 
+
 .layout-div2 div:nth-of-type(3){
   width: 80%;
   display: flex;
@@ -381,6 +385,7 @@ hr {
 /* Section one */
 .section1 {
   padding: 10px;
+  color: var(--color);
 }
 
 .starImage {
@@ -395,7 +400,6 @@ hr {
   text-align: center;
   font-size: 17px;
   font-weight: 300;
-  animation: move-up 1.5s ease-in-out;
 }
 
 .starBtns {
@@ -545,7 +549,7 @@ hr {
 /* Experince */
 
 .portfol2{
-  display: none;
+  animation: move-up 0.5s ease-in;
 }
 
 .portfol2 h1 {
@@ -611,7 +615,7 @@ hr {
 /* School */
 
 .portfol3{
-  display: none;
+  animation: move-up 0.5s ease-in;
 }
 
 .portfol3 h1 {
@@ -678,7 +682,7 @@ hr {
 /* Skills */
 
 .portfol4{
-  display: none;
+  animation: move-up 0.5s ease-in;
 }
 
 .portfol4 h1 {
@@ -753,6 +757,10 @@ hr {
 
 #eight5 {
   margin-top: -45px;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Section 2 */
@@ -1661,6 +1669,42 @@ gap: 15px;
  font-size: 20px;
 }
 
+.kickStart{
+  position: relative;
+  /* transform: translateY(150px); */
+  opacity: 0;
+  /* transition: 2s all ease; */
+}
+.kickStart.active{
+  /* transform: translateY(0); */
+  opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: move-up 1s ease-out;
+}
+
+.active.fade-top {
+  animation: move-down 1s ease-out;
+}
+
+.active.flip {
+  animation: turn-x 1s ease-out;
+}
+
+.active.expand-in {
+  animation: expand-in 1s ease-out;
+}
+
+.active.expand-in-slow {
+  animation: expand-in-slow 1s ease-out;
+}
+
+.active.showStar {
+  animation: show-star 1s ease-out ;
+}
+
+
 
 
 @media screen and (min-width: 1024px) {
@@ -2336,8 +2380,9 @@ hr {
   /* border: 1px solid red; */
   padding: 2px;
   width: 50%;
-  
 }
+
+
 
 .portfol1 h1 {
   font-size: 50px;
@@ -2421,9 +2466,7 @@ hr {
 
 /* Experinece */
 
-.portfol2 {
-  display: none;
-}
+
 
 .portfol2 h1 {
   font-size: 50px;
@@ -2491,10 +2534,6 @@ hr {
 }
 
 /* School */
-
-.portfol3 {
-  display: none;
-}
 
 .portfol3 h1 {
   font-size: 50px;
@@ -2575,10 +2614,6 @@ hr {
 
 /* Skills */
 
-.portfol4 {
-  display: none;
-}
-
 .portfol4 h1 {
   font-size: 50px;
   font-weight: 400;
@@ -2651,6 +2686,11 @@ hr {
 #eight5 {
   margin-top: -45px;
 }
+
+.hidden {
+  display: none;
+}
+
 
 /* Section 2 */
 
