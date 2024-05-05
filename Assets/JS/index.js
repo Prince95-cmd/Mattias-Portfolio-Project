@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
   
-  //  Nav Dropdown
+  //  Nav Dropdown......
 const bars = document.querySelector(".bars");
 const sidebar = document.querySelector(".sidebar1");
 
@@ -9,7 +9,7 @@ bars.addEventListener("click", () => {
   sidebar.classList.toggle("active");
 })
 
-// Side nav bar 
+// Side nav bar .......
 const reveal = document.querySelector(".reveal");
 const slideBack = document.getElementById("close");
 
@@ -21,9 +21,7 @@ slideBack.addEventListener("click", () => {
   document.getElementById("SecondSidebar").style.width = "0";
 });
 
-
-
-// Scroll animation
+// Scroll animation......
 function kickStart(element) {
   var start = document.querySelectorAll(`${element}`)
 
