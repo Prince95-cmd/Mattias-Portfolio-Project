@@ -1,5 +1,3 @@
-
-
 window.addEventListener("DOMContentLoaded", () => {
   
   //  Nav Dropdown
@@ -23,40 +21,11 @@ slideBack.addEventListener("click", () => {
   document.getElementById("SecondSidebar").style.width = "0";
 });
 
-// Section one
-
-const buttons = document.querySelectorAll('.showDivButton');
-
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    const targetId = button.getAttribute('data-target');
-    const targetDiv = document.getElementById(targetId);
-
-    if (targetDiv) {
-      const divs = document.querySelectorAll('.self');
-      divs.forEach(div => {
-        if (div.id === !targetId) {
-          div.classList.add('hidden');
-          
-        } else {
-          div.classList.remove('hidden');
-        }
-      });
-      
-    }
-  });
-});
-
-
-
-
-
-
 
 
 // Scroll animation
-function kickStart() {
-  var start = document.querySelectorAll(".kickStart")
+function kickStart(element) {
+  var start = document.querySelectorAll(`${element}`)
 
   for (let i = 0; i < start.length; i++) {
     let windowHeight = window.innerHeight;
@@ -71,36 +40,12 @@ function kickStart() {
   }
 }
 
-window.addEventListener("scroll", kickStart);
-kickStart()
+window.addEventListener("scroll", () =>{
+kickStart(".translateY")
+kickStart(".translateYN")
+kickStart(".flip")
+kickStart(".pop")
+})
 
-
-
-// function revealElement(element){
-//   let reveals = document.querySelectorAll(`${element}`)
-//   for(let i = 0; i<reveals.length; i++){
-//        let windowHeight = window.innerHeight;
-//        let revealTop = reveals[i].getBoundingClientRect().top;
-//        let revealPoint = 150;
-       
-
-//        if(revealTop < windowHeight - revealPoint  ){
-//           reveals[i].classList.add('active');
-     
-//                   //  console.log(reveals[i])
-
-
-//        }else{
-//           reveals[i].classList.remove('active');
-//        }
-//   }
-// }
-
-// window.addEventListener("scroll", ()=>{
-//   revealElement('.revealElement')
-//   reveal('.translateYN')
-//   reveal('.pop')
-//   reveal('.flip')
-// })
 })
 

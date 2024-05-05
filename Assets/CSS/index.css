@@ -23,6 +23,54 @@ html {
     text-decoration: none;
   }
 
+  .translateY{
+    /* position: relative; */
+    transform: translateY(150px);
+    transition: 1s ease;
+    opacity: 0;
+    
+    }
+  .translateYN{
+    /* position: relative; */
+    transform: translateY(-150px);
+    transition: 1s ease;
+    opacity: 0;
+    
+    }
+    .translateY.active, .translateYN.active{
+    transform: translateY(0px);
+    opacity: 1; 
+    z-index: 1;
+    }
+  .flip{
+    position: relative;
+    transform: rotateX(180deg);   
+         transition: 0.5s ease;
+         perspective: 1000px;
+    opacity: 0;
+    
+    }
+    .flip.active{
+      transform: rotateX(0deg);   
+
+    opacity: 1; 
+    z-index: 1;
+    }
+    .pop{
+      transform: scale(0);
+      transition: 1s ease;
+    }
+    .pop.active{
+      transform: scale(1);
+    }
+
+    
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+
 body{
     font-family: "Kanit", sans-serif;
     background-color: var(--bg-color1);
@@ -391,7 +439,7 @@ hr {
 .starImage {
   width: 30px;
   margin: 70px auto 30px auto;
-  /* animation: show-star 3s ease ; */
+  animation: show-star 3s ease ;
 }
 
 .starPara {
@@ -400,6 +448,7 @@ hr {
   text-align: center;
   font-size: 17px;
   font-weight: 300;
+  animation: move-up 1.5s ease-out;
 }
 
 .starBtns {
@@ -551,7 +600,6 @@ hr {
 /* Experince */
 
 .portfol2{
-  animation: move-up 0.5s ease-in;
   display: none;
 }
 
@@ -560,6 +608,7 @@ hr {
   font-weight: 400;
   margin-top: 15px;
   margin-bottom: 10px;
+  animation: move-up 1.5s ease-out;
 }
 
 .portfol2 div:nth-of-type(1) p{
@@ -764,14 +813,9 @@ hr {
   margin-top: -45px;
 }
 
-.hidden {
-  display: none;
-}
 
-.selected {
-  background-color: var(--color3);
-  color: var(--bg-color2);
-}
+
+
 
 /* Section 2 */
 
@@ -1679,40 +1723,7 @@ gap: 15px;
  font-size: 20px;
 }
 
-.kickStart{
-  position: relative;
-  /* transform: translateY(150px); */
-  opacity: 0;
-  /* transition: 2s all ease; */
-}
-.kickStart.active{
-  /* transform: translateY(0); */
-  opacity: 1;
-}
 
-.active.fade-bottom {
-  animation: move-up 1s ease-out;
-}
-
-.active.fade-top {
-  animation: move-down 1s ease-out;
-}
-
-.active.flip {
-  animation: turn-x 1s ease-out;
-}
-
-.active.expand-in {
-  animation: expand-in 1s ease-out;
-}
-
-.active.expand-in-slow {
-  animation: expand-in-slow 1s ease-out;
-}
-
-.active.showStar {
-  animation: show-star 1.5s ease-out ;
-}
 
 
 
