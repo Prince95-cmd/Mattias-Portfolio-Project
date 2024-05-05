@@ -106,7 +106,9 @@ body{
   width: 100%;
   /* margin-top: -5px; */
   padding: 5px;
+  padding-left: 20px;
   display: flex;
+  width: 105%;
   height: 80px;
   align-items: center;
   border-bottom: 1px var(--color4) solid; 
@@ -114,6 +116,7 @@ body{
   z-index: 10;
   background-color: var(--bg-color2);
   margin: 0;
+  margin-left: -10px;
   box-sizing: border-box;
 } 
 
@@ -207,7 +210,7 @@ body{
 }
 
 .bars{
-  margin: 10px 10px 0 10px;
+  margin: 10px 10px 0 15px;
   /* position: relative; */
 }
 
@@ -222,7 +225,8 @@ body{
   height: 42px;
   background-color: var(--color);
   margin-top: 2px;
-  margin-right:-10px ;
+  margin-right:-5px ;
+  margin-left: 10px;
 }
 .reveal .fa-bars {
   font-size: 20px;
@@ -1799,12 +1803,15 @@ body, html{
   border-bottom: 1px var(--color4) solid; 
   position: fixed;
   z-index: 10;
+  /* margin-right: 5px; */
+  justify-content: center;
 }
 
 .logo {
   width: 150px;
   height: 35px;
    margin-top: -6px; 
+   margin-left: -40px;
 }
 
 .logo img {
@@ -1835,7 +1842,6 @@ body, html{
   transition: opacity 0.3s;
   border: none;
   align-content: center;
-  animation: move-up 0.5s ease-out;
 }
 
 .nav-hovers li .tooltip-text a{
@@ -1869,7 +1875,7 @@ body, html{
 .nav-hovers li:hover .tooltip-text{
   visibility: visible;
   opacity: 1;
-  animation: go-up 0.5s ease-out;
+  animation: move-up 0.5s ease-out;
 }
 
 /* Second tooltip */
@@ -1888,7 +1894,6 @@ body, html{
   transition: opacity 0.3s;
   border: none;
   align-content: center;
-  
 }
 
 .nav-hovers li .tooltip-link a{
@@ -1972,7 +1977,7 @@ body, html{
   background-color: var(--color3);
   border: none;
   border-radius: 5px;
-  margin-left: 20px;
+  margin-left: -10px;
   font-size: 18px;
   transition: background-color 0.3s ease, opacity 0.3s ease;
   position: relative;
@@ -2021,6 +2026,7 @@ body, html{
   height: 60px;
   width: 60px;
   margin-left: 30px;
+  margin-right: 10px;
   margin-top: -8px;
   background-color: var(--color);
 }

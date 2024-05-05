@@ -10,13 +10,14 @@
     background-color: var(--bg-color3);
     position: fixed;
     z-index: 11;
-    padding: 10px 0;
-    width: 100%;
+    padding: 10px 5px 10px 0;
+    width: 102%;
     height: 100%;
     /* display: none; */
     color: var(--color);
     left: -5px;
-    top: 73px;
+    top: 70px;
+    margin: 0;
  }
 
  .sidecover  {
