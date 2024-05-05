@@ -64,7 +64,7 @@ html {
       transform: scale(1);
     }
 
-    
+
   ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -827,9 +827,7 @@ hr {
   padding: 50px 10px 50px 10px;
 }
 
-.awards *{
-  animation: move-up 1.5s linear;
-}
+
 
 .awards div {
   display: flex;
