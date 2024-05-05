@@ -35,12 +35,14 @@ buttons.forEach(button => {
     if (targetDiv) {
       const divs = document.querySelectorAll('.self');
       divs.forEach(div => {
-        if (div.id === targetId) {
-          div.classList.remove('hidden');
-        } else {
+        if (div.id === !targetId) {
           div.classList.add('hidden');
+          
+        } else {
+          div.classList.remove('hidden');
         }
       });
+      
     }
   });
 });
