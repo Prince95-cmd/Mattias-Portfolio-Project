@@ -65,6 +65,7 @@ html {
     }
 
 
+
   ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -1521,7 +1522,7 @@ hr {
 }
 
 .blogShowcase{
-  animation: move-up 1.5s ease-out
+ 
 }
 
 
@@ -1574,6 +1575,7 @@ hr {
   margin-left: 20px;
   margin-top: 6px;
 }
+
 
 .blogShowcase img{
   width: 80%;
@@ -3527,9 +3529,11 @@ hr {
 
 .blogShowcase div:nth-of-type(2){
 width: 35%;
-
 }
 
+.blogPhoto{
+  visibility: hidden;
+}
 
 .blogShowcase img{
   width: 100%;
